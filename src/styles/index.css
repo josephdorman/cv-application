@@ -1,1 +1,24 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  height: 100vh;
+}
+
+#root {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  width: 1500px;
+  height: calc(100vh - 100px);
+  padding: 50px 30px;
+  margin: auto;
+}
+
+.edit-container,
+.resume-container {
+  flex: 1;
+}
 
