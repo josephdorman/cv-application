@@ -4,6 +4,8 @@
 }
 
 body {
+  font-family: sans-serif;
+  background-color: rgb(26,26,28);
   height: 100vh;
 }
 
