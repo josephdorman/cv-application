@@ -5,7 +5,7 @@ function Contact() {
   return (
     <>
       <form className='contact'>
-        <h2 className="contact-title">Contact Info</h2>
+        <h2 className="form-title">Contact Info</h2>
         <div className="input-element">
           <label htmlFor="email">Email</label>
           <input type="email" id="email" name="email" />
