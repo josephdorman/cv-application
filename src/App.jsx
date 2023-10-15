@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Contact from './components/Contact'
+import Personal from './components/Personal'
 import Resume from './components/Resume'
 import './styles/App.css'
 
@@ -9,6 +10,7 @@ function App() {
     <>
       <div className="edit-container">
         <Contact />
+        <Personal />
       </div>
       <div className="resume-container">
         <Resume />
