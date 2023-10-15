@@ -5,7 +5,7 @@ function Personal() {
   return (
     <>
       <form className='personal'>
-        <h2 className="form-title">Contact Info</h2>
+        <h2 className="form-title">Personal Details</h2>
         <div className="input-element">
           <label htmlFor="fname">First Name</label>
           <input type="text" id="fname" name="fname" />
