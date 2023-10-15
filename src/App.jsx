@@ -9,8 +9,8 @@ function App() {
   return (
     <>
       <div className="edit-container">
-        <Contact />
         <Personal />
+        <Contact />
       </div>
       <div className="resume-container">
         <Resume />
