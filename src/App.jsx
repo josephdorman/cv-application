@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Header from './components/Header'
 import Contact from './components/Contact'
 import Personal from './components/Personal'
 import Resume from './components/Resume'
@@ -9,6 +10,7 @@ function App() {
   return (
     <>
       <div className="edit-container">
+        <Header />
         <Personal />
         <Contact />
       </div>
