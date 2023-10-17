@@ -9,10 +9,7 @@ function Header() {
           <h1 className="header-title">CV Generator</h1>
           <div className="buttons"></div>
         </div>
-        <div className="link">
-          <img src={github}></img>
-          <p>Created by Joseph Dorman</p>
-        </div>
+        <p className='credit'>Created by <span className='link'><img src={github}></img>Joseph Dorman</span></p>
       </header>
     </>
   )
