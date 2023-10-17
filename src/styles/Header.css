@@ -25,3 +25,14 @@ header {
   gap: 5px;
   background-color: rgb(41, 41, 44);
 }
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
