@@ -12,7 +12,7 @@ function Header() {
             <Buttons />
           </div>
         </div>
-        <p className='credit'>Created by <span className='link'><img src={github}></img>Joseph Dorman</span></p>
+        <p className='credit'>Created by <button className='link'><img src={github}></img>Joseph Dorman</button></p>
       </header>
     </>
   )

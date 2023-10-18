@@ -17,19 +17,26 @@ header {
 
 .link {
   display: flex;
-  height: 30px;
-  width: 150px;
+  height: 32px;
+  width: 160px;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  gap: 5px;
+  gap: 8px;
+  font-size: 16px;
+  color: rgb(238,235,239);
   background-color: rgb(41, 41, 44);
+}
+
+.link:hover {
+  color: rgb(240,51,83);
 }
 
 .head {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 8px;
 }
 
 .buttons {
