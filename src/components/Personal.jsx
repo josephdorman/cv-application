@@ -2,7 +2,6 @@ import '../styles/Personal.css'
 import personal from '/personal.svg'
 
 function Personal() {
-
   return (
     <>
       <form className='personal'>
