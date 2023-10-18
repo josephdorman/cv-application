@@ -14,7 +14,8 @@
 }
 
 .contact,
-.personal {
+.personal,
+.education {
   background-color: rgb(26,26,28);
   padding: 20px;
   width: 500px;
@@ -43,11 +44,6 @@ input {
   background-color: rgb(238,235,239);
   padding: 10px;
   font-size: 14px;
-}
-
-input:focus {
-  outline: 2px solid rgb(240,51,83);
-  background-color: rgb(223, 195, 197);
 }
 
 .input-element {
