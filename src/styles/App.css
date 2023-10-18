@@ -15,7 +15,8 @@
 
 .contact,
 .personal,
-.education {
+.education,
+.work {
   background-color: rgb(26,26,28);
   padding: 20px;
   width: 500px;

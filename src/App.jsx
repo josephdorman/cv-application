@@ -4,6 +4,7 @@ import Contact from './components/Contact'
 import Personal from './components/Personal'
 import Resume from './components/Resume'
 import Education from './components/Education'
+import Work from './components/Work'
 import './styles/App.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Personal />
         <Contact />
         <Education />
+        <Work />
       </div>
       <div className="resume-container">
         <Resume />
