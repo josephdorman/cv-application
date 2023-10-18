@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Contact from './components/Contact'
 import Personal from './components/Personal'
 import Resume from './components/Resume'
+import Education from './components/Education'
 import './styles/App.css'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Header />
         <Personal />
         <Contact />
+        <Education />
       </div>
       <div className="resume-container">
         <Resume />
