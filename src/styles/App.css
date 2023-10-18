@@ -21,6 +21,9 @@
 }
 
 .form-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   /* color: rgb(240,51,83); */
   color: rgb(238,235,239);
   text-transform: uppercase;
