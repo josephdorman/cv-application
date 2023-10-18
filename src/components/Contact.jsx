@@ -1,11 +1,12 @@
 import '../styles/Contact.css'
+import contact from '/contact.svg'
 
 function Contact() {
 
   return (
     <>
       <form className='contact'>
-        <h2 className="form-title">Contact Info</h2>
+        <h2 className="form-title"><img className='l-icon' src={contact}></img>Contact Info</h2>
         <div className="input-element">
           <label htmlFor="email">Email</label>
           <input type="email" id="email" name="email" />
