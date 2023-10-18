@@ -1,11 +1,7 @@
-img {
-  height: 20px;
-  width: 20px;
-}
-
 header {
   width: 500px;
   padding: 20px;
+  border-bottom: 1px solid rgb(238,235,239);
 }
 
 .credit {
