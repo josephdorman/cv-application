@@ -1,11 +1,12 @@
 import '../styles/Personal.css'
+import personal from '/personal.svg'
 
 function Personal() {
 
   return (
     <>
       <form className='personal'>
-        <h2 className="form-title">Personal Details</h2>
+        <h2 className="form-title"><img className="l-icon" src={personal}></img>Personal Details</h2>
         <div className="input-element">
           <label htmlFor="fname">First Name</label>
           <input type="text" id="fname" name="fname" />
