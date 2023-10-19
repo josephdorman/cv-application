@@ -30,3 +30,7 @@ body {
   flex-direction: column;
   gap: 30px;
 }
+
+.resume-container {
+  position: fixed;
+}
