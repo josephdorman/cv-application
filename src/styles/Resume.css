@@ -5,3 +5,30 @@
   height: calc(100vh - 100px);
   background-color: rgb(238,235,239);
 }
+
+.resume-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  gap: 10px;
+  background-color: rgb(26,26,28);
+}
+
+.resume-name {
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.resume-position {
+  margin-bottom: 20px;
+}
+
+.resume-contacts {
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: bold;
+  width: 100%;
+  font-size: 14px;
+}
