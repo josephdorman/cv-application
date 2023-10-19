@@ -4,7 +4,9 @@ function Resume() {
 
   return (
     <>
-      Resume PLACEHOLDER
+      <div className="resume">
+        Resume PLACEHOLDER
+      </div>
     </>
   )
 }
