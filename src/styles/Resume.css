@@ -19,16 +19,27 @@
 .resume-name {
   font-weight: bold;
   font-size: 48px;
+  margin-top: 10px;
 }
 
-.resume-position {
-  margin-bottom: 20px;
-}
-
-.resume-contacts {
-  display: flex;
+.resume-contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
   justify-content: space-evenly;
   font-weight: bold;
   width: 100%;
   font-size: 14px;
+  padding: 15px 0px;
+}
+
+.resume-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid rgb(238,235,239);
+  gap: 5px;
+}
+
+.resume-contact-container .resume-contact:nth-child(4) {
+  border: none;
 }
