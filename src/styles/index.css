@@ -11,7 +11,6 @@ body {
 
 #root {
   display: flex;
-  flex: 1;
   justify-content: space-evenly;
   gap: 100px;
   width: 1500px;
@@ -19,13 +18,9 @@ body {
   color: rgb(238,235,239);
 }
 
-.edit-container,
-.resume-container {
-  padding: 50px 30px;
-}
-
 .edit-container {
   flex: 1;
+  padding: 50px 30px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -33,9 +28,6 @@ body {
 
 .resume-container {
   flex: 2;
-  display: flex;
-  height: calc(100vh - 100px);
   width: 800px;
   background-color: rgb(42, 42, 44);
-  position: sticky;
 }
