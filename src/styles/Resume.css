@@ -63,12 +63,22 @@
   border: 2px solid rgb(26,26,28);
 }
 
-.resume-info-container {
-  display: grid;
+.resume-work-info-container,
+.resume-edu-info-container {
   gap: 5px;
+  font-size: 18px;
+}
+
+.resume-work-info-container {
+  display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 1fr 4fr;
-  font-size: 18px;
+}
+
+.resume-edu-info-container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .resume-edu-company,

@@ -21,17 +21,16 @@ function Resume() {
         </div>
         <div className="resume-education-section">
           <h2 className="resume-title">EDUCATION</h2>
-            <div className="resume-info-container">
-              <p className="resume-edu-time">08/2022 - present</p>
-              <p className="resume-edu-company">Space X</p>
-              <p className="resume-edu-location">Los Angeles, CA</p>
-              <p className="resume-edu-location">UI UX Developer</p>
-              <p className="resume-edu-description">Working on the Space X official website, focusing on UI and UX, also worked on backend for tesla servers working on user authentication and managing databases</p>
+            <div className="resume-edu-info-container">
+              <p className="resume-edu-time">08/2018 - 08/2022</p>
+              <p className="resume-edu-school">Austin Texas University</p>
+              <p className="resume-edu-location">Austin, TX</p>
+              <p className="resume-edu-location">Bachelors in Computer Science</p>
             </div>
         </div>
         <div className="resume-work-section">
           <h2 className="resume-title">WORK EXPERIENCE</h2>
-            <div className="resume-info-container">
+            <div className="resume-work-info-container">
               <p className="resume-work-time">08/2022 - present</p>
               <p className="resume-work-company">Space X</p>
               <p className="resume-work-location">Los Angeles, CA</p>
