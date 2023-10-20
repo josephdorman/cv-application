@@ -29,6 +29,16 @@ function Resume() {
               <p className="resume-edu-description">Working on the Space X official website, focusing on UI and UX, also worked on backend for tesla servers working on user authentication and managing databases</p>
             </div>
         </div>
+        <div className="resume-work-section">
+          <h2 className="resume-title">WORK EXPERIENCE</h2>
+            <div className="resume-info-container">
+              <p className="resume-work-time">08/2022 - present</p>
+              <p className="resume-work-company">Space X</p>
+              <p className="resume-work-location">Los Angeles, CA</p>
+              <p className="resume-work-location">UI UX Developer</p>
+              <p className="resume-work-description">Working on the Space X official website, focusing on UI and UX, also worked on backend for tesla servers working on user authentication and managing databases</p>
+            </div>
+        </div>
       </div>
     </>
   )

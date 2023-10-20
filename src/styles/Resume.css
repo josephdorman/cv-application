@@ -47,7 +47,8 @@
   border: none;
 }
 
-.resume-education-section {
+.resume-education-section,
+.resume-work-section {
   display: flex;
   flex-direction: column;
   color: rgb(26,26,28);
@@ -70,10 +71,12 @@
   font-size: 18px;
 }
 
-.resume-edu-company {
+.resume-edu-company,
+.resume-work-company {
   font-weight: bold;
 }
 
-.resume-edu-description {
+.resume-edu-description,
+.resume-work-description {
   grid-column: 2;
 }
