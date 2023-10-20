@@ -28,6 +28,10 @@ function Work() {
             <input type="checkbox" id="present" name="present" />
           </div>
         </div>
+        <div className="input-element">
+          <label htmlFor="work-description">Job Description</label>
+          <textarea className="work-description" name="work-description" id="work-description" rows="10"></textarea>
+        </div>
       </form>
     </>
   )
