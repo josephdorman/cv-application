@@ -1,5 +1,8 @@
 .resume {
+  display: flex;
+  flex-direction: column;
   position: sticky;
+  gap: 30px;
   margin: 50px 50px;
   top: 50px;
   height: calc(100vh - 100px);
@@ -42,4 +45,35 @@
 
 .resume-contact-container .resume-contact:nth-child(4) {
   border: none;
+}
+
+.resume-education-section {
+  display: flex;
+  flex-direction: column;
+  color: rgb(26,26,28);
+  margin: 0px 50px;
+  gap: 20px;
+}
+
+.resume-title {
+  width: calc(100% - 20px);
+  text-align: center;
+  padding: 10px;
+  border: 2px solid rgb(26,26,28);
+}
+
+.resume-info-container {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 1fr 4fr;
+  font-size: 18px;
+}
+
+.resume-edu-company {
+  font-weight: bold;
+}
+
+.resume-edu-description {
+  grid-column: 2;
 }
