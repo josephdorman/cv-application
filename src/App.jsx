@@ -21,6 +21,22 @@ function App() {
       {
         name: 'title',
         text: ''
+      },
+      {
+        name: 'tel',
+        text: ''
+      },
+      {
+        name: 'url',
+        text: ''
+      },
+      {
+        name: 'email',
+        text: ''
+      },
+      {
+        name: 'location',
+        text: ''
       }
     ]
   })
@@ -40,7 +56,7 @@ function App() {
       <div className="edit-container">
         <Header />
         <Personal handleData={handleData}/>
-        <Contact />
+        <Contact handleData={handleData}/>
         <Education />
         <Work />
       </div>

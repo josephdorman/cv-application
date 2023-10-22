@@ -13,10 +13,10 @@ function Resume({data}) {
           <h1 className="resume-name">{data.info[0].text} {data.info[1].text}</h1>
           <h3 className='resume-position'>{data.info[2].text}</h3>
           <div className="resume-contact-container">
-            <p className="resume-contact"><img src={phone} className="s-icon" />908-761-0478</p>
-            <p className='resume-contact'><img src={website} className="s-icon" />github.com/josephdorman</p>
-            <p className="resume-contact"><img src={email} className="s-icon" />jdorman@profession.mail</p>
-            <p className="resume-contact"><img src={location} className="s-icon" />Los Angeles, CA</p>
+            <p className="resume-contact"><img src={phone} className="s-icon" />{data.info[3].text}</p>
+            <p className='resume-contact'><img src={website} className="s-icon" />{data.info[4].text}</p>
+            <p className="resume-contact"><img src={email} className="s-icon" />{data.info[5].text}</p>
+            <p className="resume-contact"><img src={location} className="s-icon" />{data.info[6].text}</p>
           </div>
         </div>
         <div className="resume-education-section">
