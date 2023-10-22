@@ -4,13 +4,13 @@ import website from '/website.svg'
 import email from '/email.svg'
 import location from '/location.svg'
 
-function Resume() {
+function Resume({data}) {
 
   return (
     <>
       <div className="resume">
         <div className="resume-header">
-          <h1 className="resume-name">Joseph Dorman</h1>
+          <h1 className="resume-name">{data.info[0].text} {data.info[1].text}</h1>
           <h3 className='resume-position'>Web Developer</h3>
           <div className="resume-contact-container">
             <p className="resume-contact"><img src={phone} className="s-icon" />908-761-0478</p>

@@ -8,18 +8,40 @@ import Work from './components/Work'
 import './styles/App.css'
 
 function App() {
+  const [data, setData] = useState ({
+    info: [
+      {
+        name: 'fname',
+        text: ''
+      },
+      {
+        name: 'lname',
+        text: ''
+      }
+    ]
+  })
+
+  const handleData = (e) => {
+    setData({...data, info:data.info.map(element => {
+          if(element.name === e.target.id)
+            element.text = e.target.value;
+            return element
+        })
+    })
+
+  }
 
   return (
     <>
       <div className="edit-container">
         <Header />
-        <Personal />
+        <Personal data={data} handleData={handleData}/>
         <Contact />
         <Education />
         <Work />
       </div>
       <div className="resume-container">
-        <Resume />
+        <Resume data={data}/>
       </div>
     </>
   )
