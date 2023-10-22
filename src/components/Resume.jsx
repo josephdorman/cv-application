@@ -11,7 +11,7 @@ function Resume({data}) {
       <div className="resume">
         <div className="resume-header">
           <h1 className="resume-name">{data.info[0].text} {data.info[1].text}</h1>
-          <h3 className='resume-position'>Web Developer</h3>
+          <h3 className='resume-position'>{data.info[2].text}</h3>
           <div className="resume-contact-container">
             <p className="resume-contact"><img src={phone} className="s-icon" />908-761-0478</p>
             <p className='resume-contact'><img src={website} className="s-icon" />github.com/josephdorman</p>

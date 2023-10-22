@@ -17,6 +17,10 @@ function App() {
       {
         name: 'lname',
         text: ''
+      },
+      {
+        name: 'title',
+        text: ''
       }
     ]
   })
@@ -35,7 +39,7 @@ function App() {
     <>
       <div className="edit-container">
         <Header />
-        <Personal data={data} handleData={handleData}/>
+        <Personal handleData={handleData}/>
         <Contact />
         <Education />
         <Work />
