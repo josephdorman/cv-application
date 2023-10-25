@@ -22,6 +22,12 @@
   width: 500px;
 }
 
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .form-title {
   display: flex;
   align-items: center;
@@ -30,6 +36,14 @@
   color: rgb(238,235,239);
   text-transform: uppercase;
   /* border-bottom: 1px solid rgb(238,235,239); */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72px;
+  height: 30px;
 }
 
 label {

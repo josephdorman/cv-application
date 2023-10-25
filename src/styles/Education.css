@@ -18,3 +18,18 @@ input#present {
 label[for="present"] {
   margin-bottom: 0px;
 }
+
+.add {
+  height: 28px;
+  width: 70px;
+  background-color: rgb(238,235,239);
+  color: rgb(26,26,28);
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.add:hover {
+  height: 30px;
+  width: 72px;
+}
