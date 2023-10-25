@@ -41,18 +41,45 @@ function App() {
     ],
     education: [
       {
-        school: '',
-        degree: '',
-        location: '',
-        start: '',
-        end: '',
-        current: ''
-      }
+        name: 'school',
+        text: ''
+      },
+      {
+        name: 'degree',
+        text: ''
+      },
+      {
+        name: 'edu-location',
+        text: ''
+      },
+      {
+        name: 'start-date',
+        text: ''
+      },
+      {
+        name: 'end-date',
+        text: ''
+      },
+      {
+        name: 'present',
+        text: ''
+      },
+      
     ]
   })
 
   const handleData = (e) => {
     setData({...data, info:data.info.map(element => {
+          if(element.name === e.target.id)
+            element.text = e.target.value;
+            return element
+        })
+    })
+
+  }
+
+  const handleEduData = (e) => {
+    setData({...data, education:data.education.map(element => {
           if(element.name === e.target.id)
             element.text = e.target.value;
             return element
@@ -67,7 +94,7 @@ function App() {
         <Header />
         <Personal handleData={handleData}/>
         <Contact handleData={handleData}/>
-        <Education />
+        <Education handleEduData={handleEduData}/>
         <Work />
       </div>
       <div className="resume-container">
