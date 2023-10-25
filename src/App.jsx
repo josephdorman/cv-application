@@ -38,6 +38,16 @@ function App() {
         name: 'location',
         text: ''
       }
+    ],
+    education: [
+      {
+        school: '',
+        degree: '',
+        location: '',
+        start: '',
+        end: '',
+        current: ''
+      }
     ]
   })
 
