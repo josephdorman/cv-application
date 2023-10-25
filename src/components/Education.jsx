@@ -14,6 +14,10 @@ function Education() {
           <label htmlFor="degree">Degree</label>
           <input type="text" id="degree" name="degree" />
         </div>
+        <div className="input-element">
+          <label htmlFor="edu-location">Location</label>
+          <input type="text" id="edu-location" name="edu-location" />
+        </div>
         <div className="timeline">
           <div className="input-element">
             <label htmlFor="start-date">Start Date</label>
