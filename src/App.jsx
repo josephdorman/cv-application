@@ -66,14 +66,12 @@ function App() {
 
   const handleEduData = (e) => {
     setData({...data, educationTemplate:data.educationTemplate.map(element => {
-          element[e.target.name] = e.target.value;
+          element[e.target.id] = e.target.value;
           return element;
         })
     })
 
     console.log(data.educationTemplate);
-    addEduData();
-
   }
 
   const addEduData = () => {
@@ -87,7 +85,7 @@ function App() {
         <Header />
         <Personal handleData={handleData}/>
         <Contact handleData={handleData}/>
-        <Education handleEduData={handleEduData}/>
+        <Education addData={addEduData} handleEduData={handleEduData}/>
         <Work />
       </div>
       <div className="resume-container">

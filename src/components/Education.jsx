@@ -1,11 +1,11 @@
 import '../styles/Education.css'
 import education from '/education.svg'
 
-function Education({handleEduData}) {
+function Education({addEduData ,handleEduData}) {
   return (
     <>
       <form className='education'>
-        <h2 className='form-header'><span className="form-title"><img className='l-icon' src={education}></img>Education</span><span className='button-container'><button className='add'>Add</button></span></h2>
+        <h2 className='form-header'><span className="form-title"><img className='l-icon' src={education}></img>Education</span><span className='button-container'><button onChange={addEduData} className='add'>Add</button></span></h2>
         <div className="input-element">
           <label htmlFor="school">School</label>
           <input onChange={handleEduData} type="text" id="school" name="school" />
