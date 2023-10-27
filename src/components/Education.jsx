@@ -16,16 +16,16 @@ function Education({handleEduData}) {
         </div>
         <div className="input-element">
           <label htmlFor="edu-location">Location</label>
-          <input onChange={handleEduData} type="text" id="edu-location" name="edu-location" />
+          <input onChange={handleEduData} type="text" id="location" name="location" />
         </div>
         <div className="timeline">
           <div className="input-element">
             <label htmlFor="start-date">Start Date</label>
-            <input onChange={handleEduData} type="date" id="start-date" name="start-date" />
+            <input onChange={handleEduData} type="date" id="start" name="start" />
           </div>
           <div className="input-element">
             <label htmlFor="end-date">End Date</label>
-            <input onChange={handleEduData} type="date" id="end-date" name="end-date" />
+            <input onChange={handleEduData} type="date" id="end" name="end" />
           </div>
           <div className="input-element">
             <label htmlFor="present">On Going?</label>
