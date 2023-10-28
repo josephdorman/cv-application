@@ -15,6 +15,11 @@ input#present {
   width: 18px;
 }
 
+input#start,
+input#end {
+  width: 150px;
+}
+
 label[for="present"] {
   margin-bottom: 0px;
 }
