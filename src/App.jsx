@@ -71,10 +71,11 @@ function App() {
         })
     })
 
-    console.log(data.educationTemplate);
+    console.log(data.educationTemplate[0]);
   }
 
-  const addEduData = () => {
+  const addEduData = (e) => {
+    e.preventDefault();
     setData({...data, education:data.educationTemplate[0]});
     console.log('this is main data', data.education);
   }
@@ -85,7 +86,7 @@ function App() {
         <Header />
         <Personal handleData={handleData}/>
         <Contact handleData={handleData}/>
-        <Education addData={addEduData} handleEduData={handleEduData}/>
+        <Education addEduData={addEduData} handleEduData={handleEduData}/>
         <Work />
       </div>
       <div className="resume-container">
