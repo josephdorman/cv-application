@@ -21,12 +21,14 @@ function Resume({data}) {
         </div>
         <div className="resume-education-section">
           <h2 className="resume-title">EDUCATION</h2>
+          {
             <div className="resume-edu-info-container">
-              <p className="resume-edu-time">08/2018 - 08/2022</p>
-              <p className="resume-edu-school">Austin Texas University</p>
-              <p className="resume-edu-location">Austin, TX</p>
-              <p className="resume-edu-degree">Bachelors in Computer Science</p>
+              <p className="resume-edu-time">{data.education[0].start} - {data.education[0].end}</p>
+              <p className="resume-edu-school">{data.education[0].school}</p>
+              <p className="resume-edu-location">{data.education[0].location}</p>
+              <p className="resume-edu-degree">{data.education[0].degree}</p>
             </div>
+          }  
         </div>
         <div className="resume-work-section">
           <h2 className="resume-title">WORK EXPERIENCE</h2>

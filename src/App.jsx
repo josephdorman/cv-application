@@ -39,7 +39,7 @@ function App() {
         text: ''
       }
     ],
-    educationTemplate: [
+    education: [
       {
         school: '',
         degree: '',
@@ -48,9 +48,6 @@ function App() {
         end: '',
         present: ''
       }
-    ],
-    education: [
-
     ]
   })
 
@@ -65,18 +62,25 @@ function App() {
   }
 
   const handleEduData = (e) => {
-    setData({...data, educationTemplate:data.educationTemplate.map(element => {
+    setData({...data, education:data.education.map(element => {
           element[e.target.id] = e.target.value;
           return element;
         })
     })
 
-    console.log(data.educationTemplate[0]);
+    console.log(data.education[0]);
   }
 
   const addEduData = (e) => {
     e.preventDefault();
-    setData({...data, education:data.educationTemplate[0]});
+    // setData({...data, education:data.education});
+    setData({...data, education: [...data.education , {
+                                        school: "",
+                                        degree: "",
+                                        start: "",
+                                        end: "",
+                                        present: ""}]})
+
     console.log('this is main data', data.education);
   }
 

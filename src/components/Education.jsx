@@ -23,11 +23,11 @@ function Education({addEduData, handleEduData}) {
         <div className="timeline">
           <div className="input-element">
             <label htmlFor="start-date">Start Date</label>
-            <input onChange={handleEduData} type="date" id="start" name="start" />
+            <input onChange={handleEduData} type="text" id="start" name="start" />
           </div>
           <div className="input-element">
             <label htmlFor="end-date">End Date</label>
-            <input onChange={handleEduData} type="date" id="end" name="end" />
+            <input onChange={handleEduData} type="text" id="end" name="end" />
           </div>
           <div className="input-element">
             <label htmlFor="present">On Going?</label>
