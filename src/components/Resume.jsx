@@ -21,14 +21,19 @@ function Resume({data}) {
         <div className="resume-education-section">
           <h2 className="resume-title">EDUCATION</h2>
           {
-            data.education.map(element => (
-              <div className="resume-edu-info-container" key={element.id}>
-                <p className="resume-edu-time">{element.start} - {element.end}</p>
-                <p className="resume-edu-school">{element.school}</p>
-                <p className="resume-edu-location">{element.location}</p>
-                <p className="resume-edu-degree">{element.degree}</p>
-              </div>
-            ))
+            data.education.map(element => {
+              if (element.start === '' && element.end === '' && element.location === '' && element.school === '' && element.degree === '' && element.present === '') {
+                return false
+              }
+              return (
+                <div className="resume-edu-info-container" key={element.id}>
+                  <p className="resume-edu-time">{element.start} - {element.end}</p>
+                  <p className="resume-edu-school">{element.school}</p>
+                  <p className="resume-edu-location">{element.location}</p>
+                  <p className="resume-edu-degree">{element.degree}</p>
+                </div>
+              )
+            })
           }
         </div>
         <div className="resume-work-section">
