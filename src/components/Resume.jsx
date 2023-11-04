@@ -5,7 +5,6 @@ import email from '/email.svg'
 import location from '/location.svg'
 
 function Resume({data}) {
-
   return (
     <>
       <div className="resume">
@@ -22,13 +21,15 @@ function Resume({data}) {
         <div className="resume-education-section">
           <h2 className="resume-title">EDUCATION</h2>
           {
-            <div className="resume-edu-info-container">
-              <p className="resume-edu-time">{data.education[0].start} - {data.education[0].end}</p>
-              <p className="resume-edu-school">{data.education[0].school}</p>
-              <p className="resume-edu-location">{data.education[0].location}</p>
-              <p className="resume-edu-degree">{data.education[0].degree}</p>
-            </div>
-          }  
+            data.education.map(element => (
+              <div className="resume-edu-info-container" key={element.id}>
+                <p className="resume-edu-time">{element.start} - {element.end}</p>
+                <p className="resume-edu-school">{element.school}</p>
+                <p className="resume-edu-location">{element.location}</p>
+                <p className="resume-edu-degree">{element.degree}</p>
+              </div>
+            ))
+          }
         </div>
         <div className="resume-work-section">
           <h2 className="resume-title">WORK EXPERIENCE</h2>

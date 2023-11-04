@@ -5,6 +5,7 @@ import Personal from './components/Personal'
 import Resume from './components/Resume'
 import Education from './components/Education'
 import Work from './components/Work'
+import { v4 as uuidv4 } from 'uuid'
 import './styles/App.css'
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
     ],
     education: [
       {
+        id: uuidv4(),
         school: '',
         degree: '',
         location: '',
@@ -61,9 +63,13 @@ function App() {
 
   }
 
-  const handleEduData = (e) => {
+  const handleEduData = (e, id) => {
+    console.log(e.target.id, id);
     setData({...data, education:data.education.map(element => {
-          element[e.target.id] = e.target.value;
+          if (element.id === id) {
+            element[e.target.id] = e.target.value;
+          }
+          
           return element;
         })
     })
@@ -73,10 +79,11 @@ function App() {
 
   const addEduData = (e) => {
     e.preventDefault();
-    // setData({...data, education:data.education});
     setData({...data, education: [...data.education , {
+                                        id: uuidv4(),
                                         school: "",
                                         degree: "",
+                                        location: '',
                                         start: "",
                                         end: "",
                                         present: ""}]})
@@ -90,7 +97,7 @@ function App() {
         <Header />
         <Personal handleData={handleData}/>
         <Contact handleData={handleData}/>
-        <Education addEduData={addEduData} handleEduData={handleEduData}/>
+        <Education data={data} addEduData={addEduData} handleEduData={handleEduData}/>
         <Work />
       </div>
       <div className="resume-container">
