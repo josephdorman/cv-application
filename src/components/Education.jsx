@@ -1,5 +1,6 @@
 import '../styles/Education.css'
 import education from '/education.svg'
+import trash from '/trash-can-outline.svg'
 
 // {e => {e.preventDefault(); alert('Submitting!');}}
 
@@ -10,7 +11,10 @@ function Education({data, addEduData, handleEduData}) {
   return (
     <> 
       <form className='education'>
-          <h2 className='form-header'><span className="form-title"><img className='l-icon' src={education}></img>Education</span><span className='button-container'><button onClick={addEduData} className='add' type="submit">Add</button></span></h2>
+        <h2 className='form-header'><span className="form-title"><img className='l-icon' src={education}></img>Education</span><span className='button-container'><button onClick={addEduData} className='add' type="submit">Add</button></span></h2>
+        {
+          <div className="eduTag">Education 1<img className='m-icon trash' src={trash}></img></div>
+        }
         <div className="input-element">
           <label htmlFor="school">School</label>
           <input onChange={(e) => handleEduData(e, id)} type="text" id="school" name="school" value={data.education[last].school}/>
