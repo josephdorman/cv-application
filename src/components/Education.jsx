@@ -4,7 +4,7 @@ import trash from '/trash-can-outline.svg'
 
 // {e => {e.preventDefault(); alert('Submitting!');}}
 
-function Education({data, addEduData, handleEduData}) {
+function Education({data, removeEduData, addEduData, handleEduData}) {
   const last = data.education.length - 1;
   const id = data.education[last].id;
 
@@ -15,11 +15,11 @@ function Education({data, addEduData, handleEduData}) {
         {
           data.education.map(element => {
             if (element === data.education[last]) {
-              return;
+              return false;
             }
             return (
               <>
-                <div id={element.id} className="eduTag">{element.school}<img className='m-icon trash' src={trash}></img></div>
+                <div key={element.id} className="eduTag">{element.school}<button onClick={(e) => removeEduData(e, element.id)} className='delete'><img className='m-icon trash' src={trash}></img></button></div>
               </>
             )
           })

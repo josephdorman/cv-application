@@ -56,3 +56,7 @@ label[for="present"] {
 .trash {
   margin-right: 2px;
 }
+
+.delete {
+  background-color: rgb(238,235,239);
+}

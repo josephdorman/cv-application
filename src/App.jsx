@@ -91,13 +91,18 @@ function App() {
     console.log('this is main data', data.education);
   }
 
+  const removeEduData = (e, id) => {
+    e.preventDefault();
+    setData({...data, education: data.education.filter(education => education.id !== id)})
+  }
+
   return (
     <>
       <div className="edit-container">
         <Header />
         <Personal handleData={handleData}/>
         <Contact handleData={handleData}/>
-        <Education data={data} addEduData={addEduData} handleEduData={handleEduData}/>
+        <Education data={data} removeEduData={removeEduData} addEduData={addEduData} handleEduData={handleEduData}/>
         <Work />
       </div>
       <div className="resume-container">
