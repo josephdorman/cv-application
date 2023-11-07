@@ -13,7 +13,16 @@ function Education({data, addEduData, handleEduData}) {
       <form className='education'>
         <h2 className='form-header'><span className="form-title"><img className='l-icon' src={education}></img>Education</span><span className='button-container'><button onClick={addEduData} className='add' type="submit">Add</button></span></h2>
         {
-          <div className="eduTag">Education 1<img className='m-icon trash' src={trash}></img></div>
+          data.education.map(element => {
+            if (element === data.education[last]) {
+              return;
+            }
+            return (
+              <>
+                <div id={element.id} className="eduTag">{element.school}<img className='m-icon trash' src={trash}></img></div>
+              </>
+            )
+          })
         }
         <div className="input-element">
           <label htmlFor="school">School</label>
