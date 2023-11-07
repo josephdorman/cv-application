@@ -22,8 +22,18 @@ function Resume({data}) {
           <h2 className="resume-title">EDUCATION</h2>
           {
             data.education.map(element => {
-              if (element.start === '' && element.end === '' && element.location === '' && element.school === '' && element.degree === '' && element.present === '') {
+              if (element.start === '' && element.end === '' && element.location === '' && element.school === '' && element.degree === '') {
                 return false
+              }
+              else if (element.present === true) {
+                return (
+                  <div className="resume-edu-info-container" key={element.id}>
+                    <p className="resume-edu-time">{element.start} - {'present'}</p>
+                    <p className="resume-edu-school">{element.school}</p>
+                    <p className="resume-edu-location">{element.location}</p>
+                    <p className="resume-edu-degree">{element.degree}</p>
+                  </div>
+                )
               }
               return (
                 <div className="resume-edu-info-container" key={element.id}>

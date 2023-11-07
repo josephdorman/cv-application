@@ -64,9 +64,12 @@ function App() {
   }
 
   const handleEduData = (e, id) => {
-    console.log(e.target.id, id);
+    //console.log(e.target.checked, e.target.id);
     setData({...data, education:data.education.map(element => {
-          if (element.id === id) {
+          if (e.target.id === 'present' && element.id === id) {
+            element[e.target.id] = e.target.checked;
+          }
+          else if (element.id === id) {
             element[e.target.id] = e.target.value;
           }
           
@@ -74,7 +77,7 @@ function App() {
         })
     })
 
-    console.log(data.education[0]);
+    //console.log(data.education);
   }
 
   const addEduData = (e) => {
@@ -88,7 +91,7 @@ function App() {
                                         end: "",
                                         present: ""}]})
 
-    console.log('this is main data', data.education);
+    // console.log('this is main data', data.education);
   }
 
   const removeEduData = (e, id) => {
