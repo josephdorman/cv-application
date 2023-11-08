@@ -50,6 +50,17 @@ function App() {
         end: '',
         present: ''
       }
+    ],
+    experience: [
+      {
+        id: uuidv4(),
+        company: '',
+        position: '',
+        startWork: '',
+        endWork: '',
+        presentWork: '',
+        workDescription: ''
+      }
     ]
   })
 
