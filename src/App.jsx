@@ -126,6 +126,20 @@ function App() {
     console.log(data.experience);
   }
 
+  const addWorkData = (e) => {
+    e.preventDefault();
+    setData({...data, experience: [...data.experience , {
+                                        id: uuidv4(),
+                                        company: "",
+                                        position: "",
+                                        locationWork: '',
+                                        startWork: "",
+                                        endWork: "",
+                                        presentWork: "",
+                                        workDescription: ""}]})
+
+  }
+
   return (
     <>
       <div className="edit-container">
@@ -133,7 +147,7 @@ function App() {
         <Personal handleData={handleData}/>
         <Contact handleData={handleData}/>
         <Education data={data} removeEduData={removeEduData} addEduData={addEduData} handleEduData={handleEduData}/>
-        <Work data={data} handleWorkData={handleWorkData}/>
+        <Work data={data} addWorkData={addWorkData} handleWorkData={handleWorkData}/>
       </div>
       <div className="resume-container">
         <Resume data={data}/>
