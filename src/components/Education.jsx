@@ -19,7 +19,8 @@ function Education({data, removeEduData, addEduData, handleEduData}) {
             }
             return (
               <>
-                <div key={element.id} className="eduTag">{element.school}
+                <div key={element.id} className="eduTag">
+                  <p>{element.school}</p>
                   <button onClick={(e) => removeEduData(e, element.id)} className='delete'><img className='m-icon trash' src={trash}></img></button>
                 </div>
               </>
