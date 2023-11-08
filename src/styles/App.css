@@ -66,3 +66,26 @@ input {
   flex-direction: column;
   margin-top: 20px;
 }
+
+.workTag,
+.eduTag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(238,235,239);
+  color: rgb(26,26,28);
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 5px;
+  margin-top: 12px;
+  height: 26px;
+}
+
+.trash {
+  margin-right: 2px;
+}
+
+.delete {
+  background-color: rgb(238,235,239);
+}
