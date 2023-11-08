@@ -17,6 +17,10 @@ function Work({data, handleWorkData}) {
           <label htmlFor="position">Position Title</label>
           <input onChange={(e) => handleWorkData(e, id)} type="text" id="position" name="position" value={data.experience[last].position}/>
         </div>
+        <div className="input-element">
+          <label htmlFor="locationWork">Location</label>
+          <input onChange={(e) => handleWorkData(e, id)} type="text" id="locationWork" name="locationWork" value={data.experience[last].location}/>
+        </div>
         <div className="timeline">
           <div className="input-element">
             <label htmlFor="startWork">Start Date</label>
