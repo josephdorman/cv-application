@@ -109,8 +109,9 @@ function App() {
   }
 
   const handleWorkData = (e, id) => {
-    console.log(e.target, id);
+    //console.log(e.target.id, id);
     setData({...data, experience:data.experience.map(element => {
+          console.log(element.id, id);
           if (e.target.id === 'presentWork' && element.id === id) {
             element[e.target.id] = e.target.checked;
           }
@@ -122,6 +123,7 @@ function App() {
         })
     })
 
+    console.log(data.experience);
   }
 
   return (

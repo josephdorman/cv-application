@@ -48,13 +48,19 @@ function Resume({data}) {
         </div>
         <div className="resume-work-section">
           <h2 className="resume-title">WORK EXPERIENCE</h2>
-            <div className="resume-work-info-container">
-              <p className="resume-work-time">08/2022 - present</p>
-              <p className="resume-work-company">Space X</p>
-              <p className="resume-work-location">Los Angeles, CA</p>
-              <p className="resume-work-position">UI UX Developer</p>
-              <p className="resume-work-description">Working on the Space X official website, focusing on UI and UX, also worked on backend for tesla servers working on user authentication and managing databases</p>
-            </div>
+          {
+            data.experience.map(element => {
+              return (
+                <div className="resume-work-info-container" key={element.id}>
+                  <p className="resume-work-time">{element.startWork} - {element.endWork}</p>
+                  <p className="resume-work-company">{element.company}</p>
+                  <p className="resume-work-location">{element.locationWork}</p>
+                  <p className="resume-work-position">{element.position}</p>
+                  <p className="resume-work-description">{element.workDescription}</p>
+                </div>
+              )
+            })  
+          }
         </div>
       </div>
     </>
