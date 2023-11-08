@@ -50,6 +50,20 @@ function Resume({data}) {
           <h2 className="resume-title">WORK EXPERIENCE</h2>
           {
             data.experience.map(element => {
+              if (element.startWork === '' && element.endWork === '' && element.locationWork === '' && element.position === '' && element.company === '' && element.workDescription === '') {
+                return false
+              }
+              else if (element.presentWork === true) {
+                return (
+                  <div className="resume-work-info-container" key={element.id}>
+                    <p className="resume-work-time">{element.startWork} - {'present'}</p>
+                    <p className="resume-work-company">{element.company}</p>
+                    <p className="resume-work-location">{element.locationWork}</p>
+                    <p className="resume-work-position">{element.position}</p>
+                    <p className="resume-work-description">{element.workDescription}</p>
+                  </div>
+                )
+              }
               return (
                 <div className="resume-work-info-container" key={element.id}>
                   <p className="resume-work-time">{element.startWork} - {element.endWork}</p>
