@@ -1,5 +1,6 @@
 import '../styles/Work.css'
 import work from '/work.svg'
+import trash from '/trash-can-outline.svg'
 
 function Work({data, handleWorkData, addWorkData}) {
   const last = data.experience.length - 1;
@@ -9,6 +10,21 @@ function Work({data, handleWorkData, addWorkData}) {
     <>
       <form className='work'>
         <h2 className="form-header"><span className="form-title"><img className='l-icon' src={work}></img>Work</span><span className='button-container'><button onClick={addWorkData} className='add'>Add</button></span></h2>
+        {
+          data.experience.map(element => {
+            if (element === data.experience[last]) {
+              return false;
+            }
+            return (
+              <>
+                <div key={element.id} className="workTag">
+                  <p>{element.company}</p>
+                  <button className='delete'><img className='m-icon trash' src={trash}></img></button>
+                </div>
+              </>
+            )
+          })
+        }
         <div className="input-element">
           <label htmlFor="company">Company Name</label>
           <input onChange={(e) => handleWorkData(e, id)} type="text" id="company" name="company" value={data.experience[last].company}/>

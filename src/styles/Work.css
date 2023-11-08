@@ -19,3 +19,17 @@ input#endWork {
 label[for="presentWork"] {
   margin-bottom: 0px;
 }
+
+.workTag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(238,235,239);
+  color: rgb(26,26,28);
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 5px;
+  margin-top: 12px;
+  height: 26px;
+}
