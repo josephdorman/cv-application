@@ -2,7 +2,7 @@ import '../styles/Work.css'
 import work from '/work.svg'
 import trash from '/trash-can-outline.svg'
 
-function Work({data, handleWorkData, addWorkData}) {
+function Work({data, removeWorkData, handleWorkData, addWorkData}) {
   const last = data.experience.length - 1;
   const id = data.experience[last].id;
 
@@ -19,7 +19,7 @@ function Work({data, handleWorkData, addWorkData}) {
               <>
                 <div key={element.id} className="workTag">
                   <p>{element.company}</p>
-                  <button className='delete'><img className='m-icon trash' src={trash}></img></button>
+                  <button onClick={(e) => removeWorkData(e, element.id)} className='delete'><img className='m-icon trash' src={trash}></img></button>
                 </div>
               </>
             )

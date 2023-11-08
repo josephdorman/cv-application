@@ -140,6 +140,11 @@ function App() {
 
   }
 
+  const removeWorkData = (e, id) => {
+    e.preventDefault();
+    setData({...data, experience: data.experience.filter(experience => experience.id !== id)})
+  }
+
   return (
     <>
       <div className="edit-container">
@@ -147,7 +152,7 @@ function App() {
         <Personal handleData={handleData}/>
         <Contact handleData={handleData}/>
         <Education data={data} removeEduData={removeEduData} addEduData={addEduData} handleEduData={handleEduData}/>
-        <Work data={data} addWorkData={addWorkData} handleWorkData={handleWorkData}/>
+        <Work data={data} removeWorkData={removeWorkData} addWorkData={addWorkData} handleWorkData={handleWorkData}/>
       </div>
       <div className="resume-container">
         <Resume data={data}/>
