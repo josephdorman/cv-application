@@ -2,8 +2,8 @@ import '../styles/Work.css'
 import work from '/work.svg'
 
 function Work({data, handleWorkData}) {
-  const last = data.education.length - 1;
-  const id = data.education[last].id;
+  const last = data.experience.length - 1;
+  const id = data.experience[last].id;
 
   return (
     <>
