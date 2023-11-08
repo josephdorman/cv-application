@@ -1,14 +1,14 @@
 import '../styles/Work.css'
 import work from '/work.svg'
 
-function Work({data, handleWorkData}) {
+function Work({data, handleWorkData, addWorkData}) {
   const last = data.experience.length - 1;
   const id = data.experience[last].id;
 
   return (
     <>
       <form className='work'>
-        <h2 className="form-header"><span className="form-title"><img className='l-icon' src={work}></img>Work</span><span className='button-container'><button className='add'>Add</button></span></h2>
+        <h2 className="form-header"><span className="form-title"><img className='l-icon' src={work}></img>Work</span><span className='button-container'><button onClick={addWorkData} className='add'>Add</button></span></h2>
         <div className="input-element">
           <label htmlFor="company">Company Name</label>
           <input onChange={(e) => handleWorkData(e, id)} type="text" id="company" name="company" value={data.experience[last].company}/>
