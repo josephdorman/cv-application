@@ -5,3 +5,17 @@
   border-radius: 5px;
   width: 482px;
 }
+
+input#presentWork {
+  height: 18px;
+  width: 18px;
+}
+
+input#startWork,
+input#endWork {
+  width: 150px;
+}
+
+label[for="presentWork"] {
+  margin-bottom: 0px;
+}
