@@ -16,21 +16,21 @@ function Work() {
         </div>
         <div className="timeline">
           <div className="input-element">
-            <label htmlFor="start-date">Start Date</label>
-            <input type="date" id="start-date" name="start-date" />
+            <label htmlFor="startWork">Start Date</label>
+            <input type="text" id="startWork" name="startWork" />
           </div>
           <div className="input-element">
-            <label htmlFor="end-date">End Date</label>
-            <input type="date" id="end-date" name="end-date" />
+            <label htmlFor="endWork">End Date</label>
+            <input type="text" id="endWork" name="endWork" />
           </div>
           <div className="input-element">
-            <label htmlFor="present">On Going?</label>
-            <input type="checkbox" id="present" name="present" />
+            <label htmlFor="presentWork">On Going?</label>
+            <input type="checkbox" id="presentWork" name="presentWork" />
           </div>
         </div>
         <div className="input-element">
-          <label htmlFor="work-description">Job Description</label>
-          <textarea className="work-description" name="work-description" id="work-description" rows="10"></textarea>
+          <label htmlFor="workDescription">Job Description</label>
+          <textarea className="workDescription" name="workDescription" id="workDescription" rows="10"></textarea>
         </div>
       </form>
     </>
