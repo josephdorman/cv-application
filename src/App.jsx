@@ -56,7 +56,7 @@ function App() {
         id: uuidv4(),
         company: '',
         position: '',
-        location: '',
+        locationWork: '',
         startWork: '',
         endWork: '',
         presentWork: '',
