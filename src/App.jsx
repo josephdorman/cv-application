@@ -107,6 +107,22 @@ function App() {
     setData({...data, education: data.education.filter(education => education.id !== id)})
   }
 
+  const handleWorkData = (e, id) => {
+    console.log(e.target, id);
+    setData({...data, experience:data.experience.map(element => {
+          if (e.target.id === 'presentWork' && element.id === id) {
+            element[e.target.id] = e.target.checked;
+          }
+          else if (element.id === id) {
+            element[e.target.id] = e.target.value;
+          }
+          
+          return element;
+        })
+    })
+
+  }
+
   return (
     <>
       <div className="edit-container">
@@ -114,7 +130,7 @@ function App() {
         <Personal handleData={handleData}/>
         <Contact handleData={handleData}/>
         <Education data={data} removeEduData={removeEduData} addEduData={addEduData} handleEduData={handleEduData}/>
-        <Work />
+        <Work data={data} handleWorkData={handleWorkData}/>
       </div>
       <div className="resume-container">
         <Resume data={data}/>
