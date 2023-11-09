@@ -5,7 +5,7 @@ import Personal from './components/Personal'
 import Resume from './components/Resume'
 import Education from './components/Education'
 import Work from './components/Work'
-import Autofill from './components/autofill'
+import Autofill from './components/Autofill'
 import { v4 as uuidv4 } from 'uuid'
 import './styles/App.css'
 
