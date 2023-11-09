@@ -67,6 +67,10 @@ function App() {
     ]
   })
 
+  const resetForm = () => {
+    Reset(data, setData);
+  }
+
   const loadPreset = () => {
     Autofill(data, setData);
   }
@@ -154,7 +158,7 @@ function App() {
   return (
     <>
       <div className="edit-container">
-        <Header loadPreset={loadPreset}/>
+        <Header resetForm={resetForm} loadPreset={loadPreset}/>
         <Personal handleData={handleData}/>
         <Contact handleData={handleData}/>
         <Education data={data} removeEduData={removeEduData} addEduData={addEduData} handleEduData={handleEduData}/>
