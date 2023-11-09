@@ -5,6 +5,7 @@ import Personal from './components/Personal'
 import Resume from './components/Resume'
 import Education from './components/Education'
 import Work from './components/Work'
+import Autofill from './components/autofill'
 import { v4 as uuidv4 } from 'uuid'
 import './styles/App.css'
 
@@ -64,6 +65,10 @@ function App() {
       }
     ]
   })
+
+  const loadPreset = () => {
+    Autofill();
+  }
 
   const handleData = (e) => {
     setData({...data, info:data.info.map(element => {
@@ -148,7 +153,7 @@ function App() {
   return (
     <>
       <div className="edit-container">
-        <Header data={data}/>
+        <Header loadPreset={loadPreset}/>
         <Personal handleData={handleData}/>
         <Contact handleData={handleData}/>
         <Education data={data} removeEduData={removeEduData} addEduData={addEduData} handleEduData={handleEduData}/>
