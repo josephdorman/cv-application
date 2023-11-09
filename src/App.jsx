@@ -67,7 +67,7 @@ function App() {
   })
 
   const loadPreset = () => {
-    Autofill();
+    Autofill(data, setData);
   }
 
   const handleData = (e) => {
