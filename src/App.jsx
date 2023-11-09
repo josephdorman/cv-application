@@ -6,6 +6,7 @@ import Resume from './components/Resume'
 import Education from './components/Education'
 import Work from './components/Work'
 import Autofill from './components/Autofill'
+import Reset from './componenets/Reset'
 import { v4 as uuidv4 } from 'uuid'
 import './styles/App.css'
 
