@@ -3,7 +3,7 @@ import reset from '/reset.svg'
 import autofill from '/autofill.svg'
 import download from '/download.svg'
 
-function Buttons() {
+function Buttons({data}) {
   return (
     <>
       <button className="reset"><img className="m-icon" src={reset}></img></button>

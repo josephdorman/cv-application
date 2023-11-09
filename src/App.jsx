@@ -148,7 +148,7 @@ function App() {
   return (
     <>
       <div className="edit-container">
-        <Header />
+        <Header data={data}/>
         <Personal handleData={handleData}/>
         <Contact handleData={handleData}/>
         <Education data={data} removeEduData={removeEduData} addEduData={addEduData} handleEduData={handleEduData}/>
