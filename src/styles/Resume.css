@@ -3,7 +3,6 @@
   flex-direction: column;
   position: sticky;
   gap: 30px;
-  margin: 50px 50px;
   top: 50px;
   height: calc(100vh - 100px);
   background-color: rgb(238,235,239);
@@ -94,7 +93,6 @@
 @media (max-width: 1920px) {
   .resume {
     gap: 30px;
-    margin: 50px 50px;
     top: 50px;
     height: calc(100vh - 100px);
   }
