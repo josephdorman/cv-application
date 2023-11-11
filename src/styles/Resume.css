@@ -90,3 +90,40 @@
 .resume-work-description {
   grid-column: 2;
 }
+
+@media (max-width: 1920px) {
+  .resume {
+    gap: 30px;
+    margin: 50px 50px;
+    top: 50px;
+    height: calc(100vh - 100px);
+  }
+
+  .resume-header {
+    height: 150px;
+    gap: 0px;
+  }
+
+  .resume-name {
+    font-size: 34px;
+  }
+
+  .resume-position {
+    font-size: 14px;
+  }
+
+  .resume-title {
+    padding: 6px;
+    font-size: 16px;
+  }
+
+  .resume-contact-container {
+    font-size: 10px;
+  }
+
+  .resume-work-info-container,
+  .resume-edu-info-container {
+    font-size: 14px;
+  }
+
+}

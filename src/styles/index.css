@@ -30,3 +30,17 @@ body {
   flex: 2;
   background-color: rgb(42, 42, 44);
 }
+
+@media (max-width: 1920px) {
+  #root {
+    gap: 50px;
+  }
+
+  .edit-container {
+    max-width: 600px;
+  }
+
+  .resume-container {
+    max-width: 800px;
+  }
+}
