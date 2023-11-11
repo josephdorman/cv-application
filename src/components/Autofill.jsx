@@ -59,7 +59,7 @@ export default function Autofill (data, setData) {
       startWork: '02/2020',
       endWork: '08/2022',
       presentWork: '',
-      workDescription: 'Worked on Amazons main webpage as well ass the official ecommerce site, dealing with UX and UI making reactive based website'
+      workDescription: 'Worked on Amazons main webpage as well as the official ecommerce site, dealing with UX and UI specializing in making reactive based website'
     },
     {
       id: uuidv4(),
@@ -69,7 +69,7 @@ export default function Autofill (data, setData) {
       startWork: '11/2022',
       endWork: '',
       presentWork: true,
-      workDescription: 'Worked on the official backend that is connected to tesla cars aswell as SpaceX backends, dealt with managing databases merging with tesla cars'
+      workDescription: 'Worked on the official api and backend of tesla cars aswell as SpaceX backends, dealt with managing databases concerning telsa stock/values and multiple other databases'
     },
     {
       id: uuidv4(),
