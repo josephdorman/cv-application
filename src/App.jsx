@@ -6,6 +6,7 @@ import Resume from './components/Resume'
 import Education from './components/Education'
 import Work from './components/Work'
 import Autofill from './components/Autofill'
+import Download from './components/Download'
 import Reset from './components/Reset'
 import { v4 as uuidv4 } from 'uuid'
 import './styles/App.css'
@@ -66,6 +67,10 @@ function App() {
       }
     ]
   })
+
+  const downloadResume = () => {
+    Download();
+  }
 
   const resetForm = () => {
     Reset(data, setData);
@@ -158,7 +163,7 @@ function App() {
   return (
     <>
       <div className="edit-container">
-        <Header resetForm={resetForm} loadPreset={loadPreset}/>
+        <Header downloadResume={downloadResume} resetForm={resetForm} loadPreset={loadPreset}/>
         <Personal handleData={handleData}/>
         <Contact handleData={handleData}/>
         <Education data={data} removeEduData={removeEduData} addEduData={addEduData} handleEduData={handleEduData}/>
