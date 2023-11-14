@@ -1,8 +1,30 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# CV Generator
 
-Currently, two official plugins are available:
+This project was part of The Odin Project's JavaScript curriculum. This was my first React project with the main goal being to make a CV Generator using React. The CV Generator has two sections, the control and the visualization. The control allows the user to input and delete their information such as name, school education, work experience, etc. While the visualizer shows inputted information in real time. When finished the user can then download their CV in PDF form.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+
+
+
+## Demo
+
+Insert gif or link to demo
+
+
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+
+## Features
+- Real-time visualization
+- Download CV as PDF
+- Add and delete sections or full reset info
+
+
+## Built With
+- Vite + React
+- HTML
+- CSS
