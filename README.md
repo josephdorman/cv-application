@@ -10,7 +10,7 @@ This project was part of The Odin Project's JavaScript curriculum. This was my f
 
 ## Demo
 
-Insert gif or link to demo
+https://cv-application-cyan-rho.vercel.app/
 
 
 ## Screenshots
