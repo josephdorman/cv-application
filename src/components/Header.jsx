@@ -12,7 +12,7 @@ function Header({downloadResume,resetForm, loadPreset}) {
             <Buttons downloadResume={downloadResume} resetForm={resetForm} loadPreset={loadPreset}/>
           </div>
         </div>
-        <p className='credit'>Created by <button className='link'><img className="s-icon" src={github}></img>Joseph Dorman</button></p>
+        <p className='credit'>Created by <a href="https://github.com/josephdorman" target="_blank" rel="noopener noreferrer"><button className='link'><img className="s-icon" src={github}></img>Joseph Dorman</button></a></p>
       </header>
     </>
   )

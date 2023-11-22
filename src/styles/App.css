@@ -89,3 +89,7 @@ input {
 .delete {
   background-color: rgb(238,235,239);
 }
+
+a {
+  text-decoration: none;
+}
